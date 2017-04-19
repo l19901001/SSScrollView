@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		016D1E5A1EA714F400453DD8 /* SSCustomColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 016D1E541EA714F400453DD8 /* SSCustomColors.m */; };
+		016D1E5B1EA714F400453DD8 /* SSCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 016D1E571EA714F400453DD8 /* SSCustomView.m */; };
+		016D1E5C1EA714F400453DD8 /* SSScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 016D1E591EA714F400453DD8 /* SSScrollView.m */; };
 		01750DD81CDA4F54002B7D0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01750DD71CDA4F54002B7D0C /* main.m */; };
 		01750DDB1CDA4F54002B7D0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01750DDA1CDA4F54002B7D0C /* AppDelegate.m */; };
 		01750DDE1CDA4F54002B7D0C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01750DDD1CDA4F54002B7D0C /* ViewController.m */; };
@@ -35,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		016D1E531EA714F400453DD8 /* SSCustomColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSCustomColors.h; sourceTree = "<group>"; };
+		016D1E541EA714F400453DD8 /* SSCustomColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSCustomColors.m; sourceTree = "<group>"; };
+		016D1E561EA714F400453DD8 /* SSCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSCustomView.h; sourceTree = "<group>"; };
+		016D1E571EA714F400453DD8 /* SSCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSCustomView.m; sourceTree = "<group>"; };
+		016D1E581EA714F400453DD8 /* SSScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSScrollView.h; sourceTree = "<group>"; };
+		016D1E591EA714F400453DD8 /* SSScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSScrollView.m; sourceTree = "<group>"; };
 		01750DD31CDA4F54002B7D0C /* UIScrollViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIScrollViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01750DD71CDA4F54002B7D0C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		01750DD91CDA4F54002B7D0C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +87,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		016D1E511EA714F400453DD8 /* SSScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				016D1E521EA714F400453DD8 /* SSCustomTools */,
+				016D1E551EA714F400453DD8 /* SSCustomView */,
+				016D1E581EA714F400453DD8 /* SSScrollView.h */,
+				016D1E591EA714F400453DD8 /* SSScrollView.m */,
+			);
+			path = SSScrollView;
+			sourceTree = "<group>";
+		};
+		016D1E521EA714F400453DD8 /* SSCustomTools */ = {
+			isa = PBXGroup;
+			children = (
+				016D1E531EA714F400453DD8 /* SSCustomColors.h */,
+				016D1E541EA714F400453DD8 /* SSCustomColors.m */,
+			);
+			path = SSCustomTools;
+			sourceTree = "<group>";
+		};
+		016D1E551EA714F400453DD8 /* SSCustomView */ = {
+			isa = PBXGroup;
+			children = (
+				016D1E561EA714F400453DD8 /* SSCustomView.h */,
+				016D1E571EA714F400453DD8 /* SSCustomView.m */,
+			);
+			path = SSCustomView;
+			sourceTree = "<group>";
+		};
 		01750DCA1CDA4F54002B7D0C = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +139,7 @@
 		01750DD51CDA4F54002B7D0C /* UIScrollViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				016D1E511EA714F400453DD8 /* SSScrollView */,
 				01750DD91CDA4F54002B7D0C /* AppDelegate.h */,
 				01750DDA1CDA4F54002B7D0C /* AppDelegate.m */,
 				01750DDC1CDA4F54002B7D0C /* ViewController.h */,
@@ -275,6 +314,9 @@
 			files = (
 				01750DDE1CDA4F54002B7D0C /* ViewController.m in Sources */,
 				01750DDB1CDA4F54002B7D0C /* AppDelegate.m in Sources */,
+				016D1E5A1EA714F400453DD8 /* SSCustomColors.m in Sources */,
+				016D1E5C1EA714F400453DD8 /* SSScrollView.m in Sources */,
+				016D1E5B1EA714F400453DD8 /* SSCustomView.m in Sources */,
 				01750DD81CDA4F54002B7D0C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,6 +541,7 @@
 				01750E021CDA4F55002B7D0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01750E031CDA4F55002B7D0C /* Build configuration list for PBXNativeTarget "UIScrollViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +550,7 @@
 				01750E051CDA4F55002B7D0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01750E061CDA4F55002B7D0C /* Build configuration list for PBXNativeTarget "UIScrollViewDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +559,7 @@
 				01750E081CDA4F55002B7D0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
