@@ -29,8 +29,8 @@
     _tableView.dataSource = self;
     _tableView.tableFooterView = [UIView new];
     
-    _headerView = [[SSScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 150) DragDirection:HeaderViewDragDirectionHorizontal];
-    _headerView.contentStyle = HeaderViewScrollViewImageViewStyle;
+    _headerView = [[SSScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 150) DragDirection:HeaderViewDragDirectionVertical];
+    _headerView.contentStyle = HeaderViewScrollViewLableStyle;
     _headerView.rollingTime = 3.0;
     [_headerView reloadheaderViewWithDatas:self.images];
     _tableView.tableHeaderView = _headerView;
